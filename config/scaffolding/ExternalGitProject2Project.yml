@@ -1,18 +1,18 @@
-version: "1.0"
 info:
   model: int-scaffold
 packages:
-- name: ExternalGitProject2Project
+- gitBranch: main
   gitServerName: GH_SK_Share
   gitUrl: https://github.com/santhu736852
   gitUsername: santhu736852
-  gitBranch: main
+  name: ExternalGitProject2Project
 services:
-- serviceName: project.externalgitproject2.integrations:F1
-  packages:
+- packages:
   - name: ExternalGitProject2Project
-    version: 1.0.1
-- serviceName: pub.date:getCurrentDate
-  packages:
+    version: 1.0.4
+  serviceName: project.externalgitproject2.integrations:F1
+- packages:
   - name: WmPublic
     version: 12.1.0.0.1326
+  serviceName: pub.date:getCurrentDate
+version: '1.0'
